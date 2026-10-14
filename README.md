@@ -183,7 +183,7 @@ flowchart LR
     S1["ReservationService"]
     S2["RestaurantService"]
 
-    TEST -->|@InjectMocks| CTRL
+    TEST -->|"@InjectMocks"| CTRL
     CTRL --> S1
     CTRL --> S2
     TEST -. "@Mock · when / thenReturn / thenThrow" .-> S1
